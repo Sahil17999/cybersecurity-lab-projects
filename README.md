@@ -7,6 +7,7 @@ Welcome! This repository contains write-ups, custom exploit scripts, and cryptog
 ## 📄 Master PDF Reference
 
 For the unified, single-document PDF version containing all module summaries and execution screenshots (ideal for offline viewing or LinkedIn Feature attachments), see:
+* 📄 **[Cybersecurity Lab Portfolio (PDF)](./Cybersecurity_Lab_Portfolio.pdf)**
 
 ---
 
