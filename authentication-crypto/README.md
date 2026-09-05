@@ -17,3 +17,17 @@ Salts prevent **Pre-computed Rainbow Table Attacks** by forcing per-user hash ca
 1. Parsed target user entries from `/etc/shadow` to extract the algorithm ID and salt string.
 2. Constructed a C program using `crypt_r()` to iterate through wordlist entries, applying the salt parameters to candidate passwords.
 3. Compared computed hash strings against the shadow file target until identifying matching plaintext.
+
+## Code Snippet (Dictionary match execution)
+```c
+#include <stdio.h>
+#include <unistd.h>
+#include <crypt.h>
+int main() {
+    const char *password = "password";  
+    const char *salt = "$y$j9T$t4HYYraTPjT8AtgercDbi.";
+    char *hash = crypt(password, salt);
+    printf("Hash: %s\n", hash); 
+
+    return 0;
+}
