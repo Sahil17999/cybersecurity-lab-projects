@@ -15,7 +15,7 @@ Common algorithm identifiers ($id$) include:
 * `$6$`: SHA-512-crypt[cite: 6]
 * `$7$` / `$scrypt$`: scrypt KDF
 
-Salts defeat **Pre-computed Rainbow Table Attacks** by ensuring identical passwords yield distinct outputs across different users ($H(\text{Password} \parallel \text{Salt})$).
+Salts defeat **Pre-computed Rainbow Table Attacks** by ensuring identical passwords yield distinct outputs across different users (`Hash = H(Password || Salt)`).
 
 ---
 
