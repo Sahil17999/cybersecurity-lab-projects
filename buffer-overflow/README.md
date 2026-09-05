@@ -10,8 +10,9 @@ Analyze a stack-based buffer overflow vulnerability in a Set-UID C executable an
 
 ## Execution & Exploitation Steps
 1. **Locating Stack Offsets:** Used GDB to inspect register states at the function prologue and measure the distance between the target buffer address and Saved Frame Pointer (`$ebp`):
-   $$\text{Offset to } \$ebp = \text{Address}(\$ebp) - \text{Address}(\text{Buffer}) = 108 \text{ bytes}$$
-$$\text{Offset to Target Return Address } (\$eip) = 108 + 4 = 112 \text{ bytes}$$
+\text{Offset to } \$ebp = \text{Address}(\$ebp) - \text{Address}(\text{Buffer}) = 108 \text{ bytes}
+\text{Offset to Target Return Address } (\$eip) = 108 + 4 = 112 \text{ bytes}
+
 
 2. **Payload Architecture:** Built a Python script (`exploit.py`) to output a byte stream combining a NOP sled (`0x90`), 27-byte x86 shellcode spawning `/bin/sh`, and the targeted return address pointing back into the NOP sled.
 
