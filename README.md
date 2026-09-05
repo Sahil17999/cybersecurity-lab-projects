@@ -35,4 +35,11 @@ For the unified, single-document PDF version containing all module summaries and
 * **Tools Used:** `GDB + PEDA`, `GCC`, `Python 3`, `libcrypt`, `md5collgen`, `OpenSSL`
 * **Core Concepts:** x86 Assembly, Memory Safety, Privilege Boundaries, Cryptography, Identity Controls
 
+## 🔗 Framework & Tooling References
+* **SEED Security Labs:**
+  * [Buffer Overflow Set-UID Lab Specification](https://seedsecuritylabs.org/Labs_20.04/Software/Buffer_Overflow_Setuid/)
+  * [Crypto MD5 Collision Lab Specification](https://seedsecuritylabs.org/Labs_20.04/Crypto/Crypto_MD5_Collision/)
+* **Analysis & Encoding Tools(Used in authenticaiton-crypto section):**
+  * [CyberChef Analysis Suite (GCHQ)](https://gchq.github.io/CyberChef/)
+
 > **Academic Integrity Notice:** All exercises were completed in isolated virtual environments using public SEED Labs frameworks for educational purposes.
